@@ -1,0 +1,103 @@
+
+body{
+    background-color:white;
+}
+#f
+{
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    color: black;
+}
+.top{
+    text-decoration: none;
+    float: left;
+    padding: 12px 17px;
+}
+.container
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+	grid-template-rows: repeat(3,minmax(250px,1fr));
+	grid-gap: 30px;
+	margin: 60px 20px 20px 50px;
+	color: white;
+	background-color:white;
+	border-radius: 25px;
+}
+.container>div>img
+{
+	width: 100%;
+	height: 84.5%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+.bk
+{
+	background-color: #ebeff0;
+	align-items:     center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+    border-radius: 5%;
+    padding-top: -30px;
+}
+section
+{
+	border-radius: 5px;
+}
+/* making containers linkabe*/
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #000;   
+    background-color: #ebeff0;
+    border-radius: 6px;
+}
+
+.box:hover {
+
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.divLink {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    /* Makes sure the link doesn't get underlined */
+    z-index: 10;
+    /* raises anchor tag above everything else in div */
+    background-color: white;
+    /*workaround to make clickable in IE */
+    opacity: 0;
+    /*workaround to make clickable in IE */
+    filter: alpha(opacity=0);
+    /*workaround to make clickable in IE */
+}
+/*search */
+.navbar {
+    margin-top: 20px;
+    border-radius: 1%;
+    width: 175vh;
+    background: white;
+    box-shadow: 0px 0px 5px #959595;
+    margin-left: 5%;
+    border: 1px solid #169FFF;
+}
+.search_form input{
+    width: 149.3vh;
+    padding: 5px 0 5px 10px;
+    border-style: none;
+}
+.search_form button{   
+    width: 20vh;
+    color: black;
+    background: white;
+    border-style: none;
+    cursor: pointer;
+    border:1px solid black;
+    padding: 0.5em;
+}
